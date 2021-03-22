@@ -27,3 +27,4 @@ resource "azurerm_vmware_private_cloud" {
   network_subnet_cidr = var.azurerm_vmware_private_cloud_management_cidr
   internet_connection_enabled = false
 }
+# this is a comment
