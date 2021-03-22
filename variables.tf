@@ -36,10 +36,6 @@ variable "azurerm_vmware_private_cloud_sku" {
     description = "The host type used for AVS"
 }
 
-variable "azurerm_vmware_private_cloud_sku" {
-    description = "The host type used for AVS"
-}
-
 variable "azurerm_vmware_private_cloud_management_cidr" {
     description = "This is the management network CIDR range"
 }
