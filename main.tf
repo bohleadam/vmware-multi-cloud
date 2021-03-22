@@ -16,8 +16,8 @@ resource "azurerm_resource_group" "avs_resource_group" {
 
 resource "azurerm_vmware_private_cloud" "avs_sddc" {
   name                = var.azurerm_vmware_private_cloud_name
-  resource_group_name = azurerm_resource_group.example.name
-  location            = azurerm_resource_group.example.location
+  resource_group_name = azurerm_resource_group.avs_resource_group.name
+  location            = azurerm_resource_group.avs_resource_group.location
   sku_name            = var.azurerm_vmware_private_cloud_sku
 
   management_cluster {
