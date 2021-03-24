@@ -43,3 +43,31 @@ variable "azurerm_vmware_private_cloud_management_cidr" {
 variable "azurerm_vmware_private_cloud_host_count" {
     description = "Number of hosts in the SDDC"
 }
+
+## Azure VNET Variables
+
+variable "azurerm_virtual_network_address_space" {
+    description = "Address Space for the VNET"
+}
+
+variable "azurerm_virtual_network_subnet_1" {
+    description = "Address Space for the VNET Subnet 1"
+}
+
+# Azure Virtual Network Gateway Variables
+
+variable "azurerm_vng_gateway_subnet" {
+    description = "Virtual Network Gateway Subnet"
+}
+
+variable "api_token" {
+    description = "VMware CSP Portal API token"
+}
+
+variable "sddc_region" {
+    description = "AWS Region in which to deploy the SDDC"
+}
+
+variable "sddc_name" {
+    description = "VMC SDDC Name"
+}
